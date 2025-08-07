@@ -1,0 +1,108 @@
+# Backend Boilerplate with JWT, Passport OAuth, and TypeDI Overview
+
+This project is a robust backend boilerplate designed to provide a solid foundation for web applications requiring authentication. It features:
+
+ - JWT (JSON Web Tokens) for secure authentication
+
+ - Passport.js with Google OAuth 2.0 for social authentication
+
+ - TypeDI for elegant dependency injection
+
+ - MongoDB with Mongoose for data persistence
+
+ - Winston for logging
+
+ - Express as the web framework
+
+This boilerplate is ideal for developers who want to kickstart projects with production-ready authentication systems without building from scratch.
+
+# Key Features
+
+**Authentication**
+
+ - JWT Authentication: Secure token-based authentication with jsonwebtoken
+
+ - Google OAuth 2.0: Social login integration using Passport.js
+
+ - Session Management: Redis-backed session storage for scalability (preferably)
+
+ - Security: Helmet middleware for enhanced security headers
+
+**Architecture**
+
+ - TypeDI: Clean dependency injection pattern for better code organization
+
+ - Modular Structure: Well-organized codebase following best practices
+
+ - Environment Configuration: Dotenv for environment variable management
+
+# Development Tools
+
+* TypeScript: Strong typing for better developer experience
+
+* ts-node-dev: Hot reloading for development
+
+* Comprehensive Logging: Winston logger with customizable transports
+
+# Getting Started
+
+* Prerequisites
+ - Node.js (v18 or higher)
+
+ - MongoDB
+
+ - Redis (preferably)
+
+ - Google OAuth credentials
+
+* Installation
+ - Clone the repository
+
+ - Install dependencies: npm install
+
+ - Create a .env file based on .env.example
+
+ - Run the development server: npm run dev
+
+**Why This Boilerplate?**
+
+This project stands out because:
+
+ - It combines multiple authentication strategies in a cohesive way
+
+ - Uses TypeDI for clean dependency management
+
+ - Implements best practices for security and scalability
+
+ - Provides a solid foundation that can be extended for various use cases
+
+**Future Improvements**
+
+I plan to enhance this project with:
+
+ - Additional OAuth providers (Facebook, GitHub, etc.)
+
+ - Two-factor authentication
+
+ - Rate limiting
+
+ - Enhanced documentation
+
+ - More example routes and controllers
+
+**Collaboration**
+
+This project is temporarily open source! I welcome contributions and collaborations for a limited time before making it private. Feel free to:
+
+ - Submit issues for bugs or feature requests
+
+ - Open pull requests with improvements
+
+ - Fork the project for your own use
+
+Please note that after a certain period, this repository will be made private, so if you find it valuable, consider forking it or reaching out for longer-term collaboration opportunities.
+
+**License**
+
+MIT License - feel free to use this as a starting point for your projects while it remains public.
+
