@@ -3,7 +3,7 @@ import { Response } from "express";
 import { JwtService } from "../../Services/jwtService";
 import { Container } from "typedi";
 import { IUser } from "../../Models/user";
-import { COOKIE_MAX_AGE } from "../../Configs/env";
+import { COOKIE_MAX_AGE, ENV } from "../../Configs/env";
 
 export class CustomResponse {
   private jwtService: JwtService;
@@ -69,6 +69,8 @@ export class CustomResponse {
     this.res.cookie("jwt", token, {
       httpOnly: true,
       maxAge: COOKIE_MAX_AGE,
+      secure: ENV === 'production',
+      sameSite: 'strict'
     });
   }
 }

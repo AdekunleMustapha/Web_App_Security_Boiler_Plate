@@ -15,7 +15,7 @@ passport.use(
     {
       clientID: GOOGLE_CLIENT_ID!,
       clientSecret: GOOGLE_CLIENT_SECRET!,
-      callbackURL: "/auth/google/callback",
+      callbackURL: "http://localhost:3000/api/auth/google/callback", //your google console callback uri
     },
     async (
       _accessToken: string,
